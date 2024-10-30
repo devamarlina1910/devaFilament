@@ -10,8 +10,8 @@ return new class extends Migration
     {
         Schema::create('pelanggans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('stok_id')->constrained('stoks')->onDelete('cascade'); 
-            $table->integer('jumlah_penjualan'); 
+            $table->foreignId('stok_id')->constrained('stoks')->onDelete('cascade');
+            $table->integer('jumlah_penjualan');
             $table->date('tanggal_penjualan');
             $table->timestamps();
         });

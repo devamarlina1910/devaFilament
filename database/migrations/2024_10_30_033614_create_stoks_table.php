@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama_barang');
             $table->integer('stok');
-            $table->enum('pelanggan', ['makanan', 'minuman', 'kebutuhan_rumah_tangga', 'lainnya']); 
+            $table->enum('pelanggan', ['makanan', 'minuman', 'kebutuhan_rumah_tangga', 'lainnya']);
             $table->date('tanggal_masuk');
             $table->boolean('tersedia');
             $table->timestamps();
